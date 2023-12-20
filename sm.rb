@@ -1,6 +1,6 @@
 class Sm < Formula
   VERSION = "0.1.0"
-  BASE_URL = "https://github.com/YumaFuu/sm-deno/releases/download"
+  BASE_URL = "https://github.com/YumaFuu/denosm/releases/download"
 
   desc "sm"
   homepage "https://github.com/YumaFuu/sm-deno"
