@@ -1,5 +1,5 @@
 class BrewtapSm < Formula
-  VERSION = "1.0.2"
+  VERSION = "0.1.0"
   BASE_URL = "https://github.com/YumaFuu/sm-deno/releases/download"
 
   desc "sm"
