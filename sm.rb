@@ -3,25 +3,23 @@ class Sm < Formula
   BASE_URL = "https://github.com/YumaFuu/denosm/releases/download"
 
   desc "sm"
-  homepage "https://github.com/YumaFuu/sm-deno"
+  homepage "https://github.com/YumaFuu/denosm"
   version VERSION
 
   on_macos do
-    def install
-      if Hardware::CPU.intel?
-        url "#{BASE_URL}/v#{VERSION}/x86_64-apple-darwin"
+    if Hardware::CPU.intel?
+      url "#{BASE_URL}/v#{VERSION}/x86_64-apple-darwin"
 
-        def install
-          bin.install "x86_64-apple-darwin" => "sm"
-        end
+      def install
+        bin.install "x86_64-apple-darwin" => "sm"
       end
+    end
 
-      if Hardware::CPU.arm?
-        url "#{BASE_URL}/v#{VERSION}/aarch64-apple-darwin"
+    if Hardware::CPU.arm?
+      url "#{BASE_URL}/v#{VERSION}/aarch64-apple-darwin"
 
-        def install
-          bin.install "aarch64-apple-darwin" => "sm"
-        end
+      def install
+        bin.install "aarch64-apple-darwin" => "sm"
       end
     end
   end
