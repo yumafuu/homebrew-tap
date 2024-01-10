@@ -1,5 +1,5 @@
 class Sm < Formula
-  VERSION = "0.2.1"
+  VERSION = "0.3.0"
   BASE_URL = "https://github.com/YumaFuu/denosm/releases/download"
 
   desc "sm"
