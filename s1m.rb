@@ -5,20 +5,20 @@
 class S1m < Formula
   desc ""
   homepage ""
-  version "1.0.1"
+  version "1.0.2"
 
   on_macos do
     on_intel do
-      url "https://github.com/yumafuu/s1m/releases/download/v1.0.1/s1m_Darwin_x86_64.tar.gz"
-      sha256 "f0f7bffab720a49e333c6b0a43f538e8e2b6d59dabdbf29e44f9ce3ee14bf753"
+      url "https://github.com/yumafuu/s1m/releases/download/v1.0.2/s1m_Darwin_x86_64.tar.gz"
+      sha256 "aaf10c21541f10aba32458d411e3c70622e550b6f407afb19d4fe935e6012036"
 
       def install
         bin.install "s1m"
       end
     end
     on_arm do
-      url "https://github.com/yumafuu/s1m/releases/download/v1.0.1/s1m_Darwin_arm64.tar.gz"
-      sha256 "e95d77d96a3da15d7fa5e09ce6b38fccce33703502dda5c2fc9c7c84972adf93"
+      url "https://github.com/yumafuu/s1m/releases/download/v1.0.2/s1m_Darwin_arm64.tar.gz"
+      sha256 "93bc2d9b2e47ed8350ebb56807210d42232181221b8e4fca7e217d2b43bb0674"
 
       def install
         bin.install "s1m"
@@ -29,8 +29,8 @@ class S1m < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/yumafuu/s1m/releases/download/v1.0.1/s1m_Linux_x86_64.tar.gz"
-        sha256 "934fa738af5a40775cc131c5960c0f8dae74b9c76d7618d94e6479ef8c5b8e74"
+        url "https://github.com/yumafuu/s1m/releases/download/v1.0.2/s1m_Linux_x86_64.tar.gz"
+        sha256 "960b2f88cc4a718c638439487c8d3e76bd391889b7de504ee4e323a2b0e753d4"
 
         def install
           bin.install "s1m"
@@ -39,8 +39,8 @@ class S1m < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/yumafuu/s1m/releases/download/v1.0.1/s1m_Linux_arm64.tar.gz"
-        sha256 "ae7f24cac70f39093a5c9f53b5cc1919f59d7018863ff527493715be8c6a8626"
+        url "https://github.com/yumafuu/s1m/releases/download/v1.0.2/s1m_Linux_arm64.tar.gz"
+        sha256 "e2d967c7f035cf1e41a3f85ed0cfb9f4eade45b0daca71f85eefe28170a5a495"
 
         def install
           bin.install "s1m"
