@@ -1,19 +1,19 @@
 class GhqFzf < Formula
   homepage "https://github.com/yumafuu/ghq-fzf"
-  version "v0.0.1"
+  version "v0.0.2"
 
   on_macos do
     on_intel do
-      url "https://github.com/yumafuu/ghq-fzf/releases/download/v0.0.1/darwin-x64"
-      sha256 "0b6605cfaee6827bd961c064ca6d1481b2b6851852d7489ee130c879f34ec337"
+      url "https://github.com/yumafuu/ghq-fzf/releases/download/v0.0.2/darwin-x64"
+      sha256 "1023daf8a8b84c21fb0cd059733f44012beb74772fb83331c294a9c40594c18f"
 
       def install
         bin.install "darwin-x64" => "_ghq-fzf"
       end
     end
     on_arm do
-      url "https://github.com/yumafuu/ghq-fzf/releases/download/v0.0.1/darwin-arm64"
-      sha256 "882ccff9b79820eb3137d78bcfbd8057e8d0b43e5141971a68b89b88f36e6386"
+      url "https://github.com/yumafuu/ghq-fzf/releases/download/v0.0.2/darwin-arm64"
+      sha256 "add8d9c47d02b45b4d744217f317dd9e96f7ad5cd9f3f723aa81d05b65bd401a"
 
       def install
         bin.install "darwin-arm64" => "_ghq-fzf"
@@ -24,8 +24,8 @@ class GhqFzf < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/yumafuu/ghq-fzf/releases/download/v0.0.1/linux-x64"
-        sha256 "287bed5ee8ec080e386396d7d0a13561b107ed822daeceefd57dd3c784a532de"
+        url "https://github.com/yumafuu/ghq-fzf/releases/download/v0.0.2/linux-x64"
+        sha256 "3a622ac53406a8b676aa061815a5df0ef37efab7fe9e2c84aca4a2078ef38662"
 
         def install
           bin.install "linux-x64" => "_ghq-fzf"
@@ -34,8 +34,8 @@ class GhqFzf < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/yumafuu/ghq-fzf/releases/download/v0.0.1/linux-arm64"
-        sha256 "8c25a4c52aedef7daf942f955a99e8ee25e89ca9229e559d70e0cb6aebf2500a"
+        url "https://github.com/yumafuu/ghq-fzf/releases/download/v0.0.2/linux-arm64"
+        sha256 "4485c5de34b84bc6301a4218f5a927b2713015ee0b913ec66991aef8f0142120"
 
         def install
           bin.install "linux-arm64" => "_ghq-fzf"
