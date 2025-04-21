@@ -5,21 +5,21 @@
 class GhqFzf < Formula
   desc ""
   homepage ""
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yumafuu/ghq-fzf/releases/download/v1.0.0/ghq-fzf_1.0.0_darwin_amd64.tar.gz"
-      sha256 "5997deffc5cfa863be409abb1cf61f4b276595f15044901f675b1dec86b8a34a"
+      url "https://github.com/yumafuu/ghq-fzf/releases/download/v1.0.1/ghq-fzf_1.0.1_darwin_amd64.tar.gz"
+      sha256 "121d8bc45a2ab65842a88531e6a0afbacea9a18786d08bc8fd20b59b8e64d3b7"
 
       def install
         bin.install "_ghq-fzf"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yumafuu/ghq-fzf/releases/download/v1.0.0/ghq-fzf_1.0.0_darwin_arm64.tar.gz"
-      sha256 "a267ec3ccbbbc8169e9fbeadf40edee3d5e1bf4e451067c0fc311af3bad12f35"
+      url "https://github.com/yumafuu/ghq-fzf/releases/download/v1.0.1/ghq-fzf_1.0.1_darwin_arm64.tar.gz"
+      sha256 "4b08784657aa87272161a84d2b116f47c244446fc2a9d0b3615fce3dd72795ac"
 
       def install
         bin.install "_ghq-fzf"
@@ -30,8 +30,8 @@ class GhqFzf < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/yumafuu/ghq-fzf/releases/download/v1.0.0/ghq-fzf_1.0.0_linux_amd64.tar.gz"
-        sha256 "ccee1fd09d8e564daa8f50b632a2bc56b8053b882cebc9b2b0fcb7947b542159"
+        url "https://github.com/yumafuu/ghq-fzf/releases/download/v1.0.1/ghq-fzf_1.0.1_linux_amd64.tar.gz"
+        sha256 "c8adebe2b2eb3a0dbc1727694ae5bf26aaf0f2cfef1c914c32a84c41af9e6ffb"
 
         def install
           bin.install "_ghq-fzf"
@@ -40,8 +40,8 @@ class GhqFzf < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/yumafuu/ghq-fzf/releases/download/v1.0.0/ghq-fzf_1.0.0_linux_arm64.tar.gz"
-        sha256 "45105649d0233909bb0a1bd5a0b7f032d10b84eaf74f06649aca73d141ffe6b0"
+        url "https://github.com/yumafuu/ghq-fzf/releases/download/v1.0.1/ghq-fzf_1.0.1_linux_arm64.tar.gz"
+        sha256 "f3958f1d9e1b72e61633697f09b35a508b37e8ea10dd5c7eba2f68d56dd9165a"
 
         def install
           bin.install "_ghq-fzf"
