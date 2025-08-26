@@ -5,21 +5,21 @@
 class GhqFzf < Formula
   desc ""
   homepage ""
-  version "1.0.1"
+  version "1.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yumafuu/ghq-fzf/releases/download/v1.0.1/ghq-fzf_1.0.1_darwin_amd64.tar.gz"
-      sha256 "121d8bc45a2ab65842a88531e6a0afbacea9a18786d08bc8fd20b59b8e64d3b7"
+      url "https://github.com/yumafuu/ghq-fzf/releases/download/v1.0.2/ghq-fzf_1.0.2_darwin_amd64.tar.gz"
+      sha256 "481ada2277004439c30fe722e387f7169c57e7b9119c931ad3c1ad74df2db86b"
 
       def install
         bin.install "_ghq-fzf"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yumafuu/ghq-fzf/releases/download/v1.0.1/ghq-fzf_1.0.1_darwin_arm64.tar.gz"
-      sha256 "4b08784657aa87272161a84d2b116f47c244446fc2a9d0b3615fce3dd72795ac"
+      url "https://github.com/yumafuu/ghq-fzf/releases/download/v1.0.2/ghq-fzf_1.0.2_darwin_arm64.tar.gz"
+      sha256 "db9955271f6dc4ff4ddffab53a0f91394dc71abdef5609d31296ef538084d494"
 
       def install
         bin.install "_ghq-fzf"
@@ -28,24 +28,18 @@ class GhqFzf < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/yumafuu/ghq-fzf/releases/download/v1.0.1/ghq-fzf_1.0.1_linux_amd64.tar.gz"
-        sha256 "c8adebe2b2eb3a0dbc1727694ae5bf26aaf0f2cfef1c914c32a84c41af9e6ffb"
-
-        def install
-          bin.install "_ghq-fzf"
-        end
+    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
+      url "https://github.com/yumafuu/ghq-fzf/releases/download/v1.0.2/ghq-fzf_1.0.2_linux_amd64.tar.gz"
+      sha256 "3807cdd342b94d6885f1ff174baf5969d288c28f0e3bafac2db7b99ab966b5cc"
+      def install
+        bin.install "_ghq-fzf"
       end
     end
-    if Hardware::CPU.arm?
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/yumafuu/ghq-fzf/releases/download/v1.0.1/ghq-fzf_1.0.1_linux_arm64.tar.gz"
-        sha256 "f3958f1d9e1b72e61633697f09b35a508b37e8ea10dd5c7eba2f68d56dd9165a"
-
-        def install
-          bin.install "_ghq-fzf"
-        end
+    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
+      url "https://github.com/yumafuu/ghq-fzf/releases/download/v1.0.2/ghq-fzf_1.0.2_linux_arm64.tar.gz"
+      sha256 "76a06ce27251248081cbbd2e626dee9efbbe1bf21163f14d322672f211250f2f"
+      def install
+        bin.install "_ghq-fzf"
       end
     end
   end
